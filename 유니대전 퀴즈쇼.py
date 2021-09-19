@@ -1,4 +1,5 @@
 # 백준 20362번
+
 n, s = input().split()
 names = []
 players = []
