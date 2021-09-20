@@ -1,17 +1,22 @@
+#백준 20112번
+
 n = int(input())
 
+word = []
 word1 = []
-word3 = []
+word2 = []
 
 for i in range(n):
     w = input()
-    word1.append(w)
-    word2 = list(map(str, w))
+    word.append(w)
+    for j in w:
+        word1.append(j)
 
 for i in range(n):
     for j in range(n):
-        print(word2[j][i])
-        word3.append(word2[j][i])
+        word2.append(word[j][i])
 
-print(word2)
-print(word3)
+if word1 == word2:
+    print("YES")
+else:
+    print("NO")
